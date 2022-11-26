@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="calculator_container">
+        <div class="container_calcs">
+          <div class="results">
+            <span class="span_results"></span>
+          </div>
+          <div class="calculations">
+            <span class="span_calcs">0</span>
+          </div>
+        </div>
+        <div class="keys_container">
+          <button onclick="clearExpression()">C</button>
+          <button>
+            <i class="styled_icon fa-solid fa-plus-minus"></i>
+          </button>
+          <button onclick="deleteBackSpaceExpression()">
+            <i class="styled_icon fa-solid fa-delete-left"></i>
+          </button>
+          <button value="/" class="button_style">
+            <i class="fa-solid fa-divide"></i>
+          </button>
+          <button value="7">
+            <i class="styled_icon fa-light fa-7"></i>
+          </button>
+          <button value="8">
+            <i class="styled_icon fa-light fa-8"></i>
+          </button>
+          <button value="9">
+            <i class="styled_icon fa-light fa-9"></i>
+          </button>
+          <button value="*" class="button_style">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <button value="4">
+            <i class="styled_icon fa-light fa-4"></i>
+          </button>
+          <button value="5">
+            <i class="styled_icon fa-light fa-5"></i>
+          </button>
+          <button value="6">
+            <i class="styled_icon fa-light fa-6"></i>
+          </button>
+          <button value="-" class="button_style">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button value="1">
+            <i class="styled_icon fa-light fa-1"></i>
+          </button>
+          <button value="2">
+            <i class="styled_icon fa-light fa-2"></i>
+          </button>
+          <button value="3">
+            <i class="styled_icon fa-light fa-3"></i>
+          </button>
+          <button value="+" class="button_style">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button value="%">
+            <i class="styled_icon fa-solid fa-percent"></i>
+          </button>
+          <button value="0">
+            <i class="styled_icon fa-light fa-0"></i>
+          </button>
+          <button value=",">,</button>
+          <button class="button_style" onclick="equalsCalcs()">
+            <i class="fa-sharp fa-solid fa-equals"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/ac3d23dd5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

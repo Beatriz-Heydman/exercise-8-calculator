@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'BhuTuka Expanded One';
+    font-weight: bolder;
+}
+
+:root {
+    --first-color: #fff;
+    --second-color: #5d5d5d;
+    --third-color: #ffabcd;
+}
+
+html {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: url(assets/images/background_calculator.jpg);
+}
+
+main {
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator_container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 0 #000;
+}
+
+.calculator_container .container_calcs {
+    width: 100%;
+}
+
+.container_calcs .results {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, #ffbbcb, #ff8ab9);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.results span {
+    font-size: 3rem;
+    overflow: auto;
+}
+
+.results span::-webkit-scrollbar {
+    height: 5px;
+}
+
+.results span::-webkit-scrollbar-track {
+    background: #ff79af;
+    border-radius: 1.5rem;
+}
+
+.results span::-webkit-scrollbar-thumb {
+    background-color: var(--third-color);
+    border-radius: 1rem;
+    width: 5px;
+    height: 5px;
+}
+
+.container_calcs .calculations {
+    width: 100%;
+    min-height: 80px;
+    background: #cd74a5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0.5rem;
+}
+
+.calculations span {
+    font-size: 1.5rem;
+}
+
+span {
+    color: var(--first-color);
+    overflow: auto;
+}
+
+.calculations span::-webkit-scrollbar {
+    height: 5px;
+}
+
+.calculations span::-webkit-scrollbar-track {
+    background: #b36c95;
+    border-radius: 1rem;
+}
+
+.calculations span::-webkit-scrollbar-thumb {
+    background: #d98dba;
+    border-radius: 1rem;
+    width: 5px;
+    height: 5px;
+}
+
+.keys_container {
+    width: 100%;
+    height: 350px;
+    background: var(--first-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+}
+
+.keys_container button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: #e1e1e1;
+    color: var(--second-color);
+    transition: all ease 0.2s;
+    font-size: 1.5rem;
+}
+
+.keys_container button:hover {
+    scale: 1.1;
+    background: var(--first-color);
+    border: 1px solid var(--second-color);
+}
+
+.button_style {
+    background: linear-gradient(to bottom, #fbd2ca, #ff85a9) !important;
+    color: var(--first-color) !important;
+}
+
+button .styled_icon {
+    color: var(--second-color);
+}
